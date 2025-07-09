@@ -320,14 +320,6 @@
     top: calc(var(--spacing) * 0);
   }
 
-  .top-16 {
-    top: calc(var(--spacing) * 16);
-  }
-
-  .right-4 {
-    right: calc(var(--spacing) * 4);
-  }
-
   .right-5 {
     right: calc(var(--spacing) * 5);
   }
@@ -352,10 +344,6 @@
     margin: calc(var(--spacing) * 3);
   }
 
-  .mx-auto {
-    margin-inline: auto;
-  }
-
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -364,20 +352,8 @@
     margin-top: calc(var(--spacing) * 4);
   }
 
-  .mt-6 {
-    margin-top: calc(var(--spacing) * 6);
-  }
-
   .mt-\[60px\] {
     margin-top: 60px;
-  }
-
-  .mb-4 {
-    margin-bottom: calc(var(--spacing) * 4);
-  }
-
-  .mb-10 {
-    margin-bottom: calc(var(--spacing) * 10);
   }
 
   .block {
@@ -416,10 +392,6 @@
     height: calc(var(--spacing) * 10);
   }
 
-  .h-48 {
-    height: calc(var(--spacing) * 48);
-  }
-
   .h-\[3px\] {
     height: 3px;
   }
@@ -456,10 +428,6 @@
     width: calc(var(--spacing) * 5);
   }
 
-  .w-6 {
-    width: calc(var(--spacing) * 6);
-  }
-
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
@@ -476,10 +444,6 @@
     width: 100%;
   }
 
-  .max-w-6xl {
-    max-width: var(--container-6xl);
-  }
-
   .max-w-\[576px\] {
     max-width: 576px;
   }
@@ -494,10 +458,6 @@
 
   .max-w-screen {
     max-width: 100vw;
-  }
-
-  .max-w-xl {
-    max-width: var(--container-xl);
   }
 
   .max-w-xs {
@@ -716,10 +676,6 @@
     border-radius: var(--radius-md);
   }
 
-  .rounded-xl {
-    border-radius: var(--radius-xl);
-  }
-
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -748,10 +704,6 @@
 
   .border-white {
     border-color: var(--color-white);
-  }
-
-  .bg-black {
-    background-color: var(--color-black);
   }
 
   .bg-gray-100 {
@@ -814,10 +766,6 @@
     object-position: center;
   }
 
-  .p-4 {
-    padding: calc(var(--spacing) * 4);
-  }
-
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
@@ -828,10 +776,6 @@
 
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
-  }
-
-  .px-5 {
-    padding-inline: calc(var(--spacing) * 5);
   }
 
   .px-6 {
@@ -880,10 +824,6 @@
 
   .pr-4 {
     padding-right: calc(var(--spacing) * 4);
-  }
-
-  .pb-2 {
-    padding-bottom: calc(var(--spacing) * 2);
   }
 
   .pb-8 {
@@ -1186,15 +1126,6 @@
     }
   }
 
-  .active\:scale-95 {
-    &:active {
-      --tw-scale-x: 95%;
-      --tw-scale-y: 95%;
-      --tw-scale-z: 95%;
-      scale: var(--tw-scale-x) var(--tw-scale-y);
-    }
-  }
-
   .active\:scale-105 {
     &:active {
       --tw-scale-x: 105%;
@@ -1222,12 +1153,6 @@
     }
   }
 
-  .active\:text-green-950 {
-    &:active {
-      color: var(--color-green-950);
-    }
-  }
-
   .max-lg\:flex-col {
     @media (width < 64rem) {
       flex-direction: column;
@@ -1249,18 +1174,6 @@
   .max-sm\:w-full {
     @media (width < 40rem) {
       width: 100%;
-    }
-  }
-
-  .sm\:block {
-    @media (width >=40rem) {
-      display: block;
-    }
-  }
-
-  .sm\:flex {
-    @media (width >=40rem) {
-      display: flex;
     }
   }
 
@@ -1586,28 +1499,35 @@
   }
 }
 
+
 @layer utilities {
   /* === Font Utilities === */
-  
+
   /* Utility: .font-edu — Applies the Edu NSW ACT Cursive font */
   .font-edu {
     font-family: "Edu NSW ACT Cursive", cursive;
   }
+
 
   /* Utility: .font-poppins — Applies the Poppins sans-serif font */
   .font-poppins {
     font-family: "Poppins", sans-serif;
   }
 
+
   /* === Active State Utilities === */
+
 
   /* Utility: .active:nav-burger — Applies bg and text color when nav item is active */
   .active\:nav-burger {
     &:active {
-      background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
-      color: #15803d;           /* Tailwind's text-green-700 */
+      background-color: #f3f4f6;
+      /* Tailwind's bg-gray-100 */
+      color: #15803d;
+      /* Tailwind's text-green-700 */
     }
   }
+
 
   /* Utility: .active:scale-105 — Scales element on active */
   /* Usage: For menu grid cards */
@@ -1615,27 +1535,36 @@
     transform: scale(1.05);
   }
 
+
   /* Utility: .active-btn-bg-ring-gray-200 — Background and ring for active buttons */
   .active-btn-bg-ring-gray-200:active {
-    background-color: #e5e7eb;  /* Tailwind's bg-gray-200 */
-    box-shadow: 0 0 0 2px #e5e7eb; /* Tailwind's ring-gray-200 */
+    background-color: #e5e7eb;
+    /* Tailwind's bg-gray-200 */
+    box-shadow: 0 0 0 2px #e5e7eb;
+    /* Tailwind's ring-gray-200 */
   }
+
 
   /* Utility: .active-social-link-bg-green-700 — Green background on active social icons */
   .active-social-link-bg-green-700:active {
-    background-color: #15803d; /* Tailwind's bg-green-700 */
+    background-color: #15803d;
+    /* Tailwind's bg-green-700 */
   }
 
+
   /* === Group Active Utilities === */
+
 
   /* Utility: .group-active-underline-span:w-full — Expands underline span when group is active */
   .group:active .group-active-underline-span\:w-full {
     width: 100%;
   }
 
+
   /* Utility: .group-active-burger-span:bg-green-700 */
   /* Description: Changes <span> color inside burger menu on group active */
   .group:active .group-active-burger-span\:bg-green-700 {
-    background-color: #15803d; /* Tailwind's bg-green-700 */
+    background-color: #15803d;
+    /* Tailwind's bg-green-700 */
   }
 }
