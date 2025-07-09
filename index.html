@@ -30,17 +30,6 @@
 
   <!-- Tailwind Output -->
   <link rel="stylesheet" href="output.css" />
-
-  <!-- Custom Fonts -->
-  <style>
-    .font-edu {
-      font-family: "Edu NSW ACT Cursive", cursive;
-    }
-
-    .font-poppins {
-      font-family: "Poppins", sans-serif;
-    }
-  </style>
 </head>
 
 
@@ -57,34 +46,34 @@
                 <button id="burger-menu"
                     class="flex flex-col justify-center items-center w-8 h-6 gap-1 group cursor-pointer">
                     <span id="bar1"
-                        class="w-5 h-[3px] bg-gray-800 rounded transition-all duration-300 group-hover:bg-green-700"></span>
+                        class="w-5 h-[3px] bg-gray-800 rounded transition-all duration-300 group-hover:bg-green-700 group-active-burger-span:bg-green-700"></span>
                     <span id="bar2"
-                        class="w-5 h-[3px] bg-gray-800 rounded transition-all duration-300 group-hover:bg-green-700"></span>
+                        class="w-5 h-[3px] bg-gray-800 rounded transition-all duration-300 group-hover:bg-green-700 group-active-burger-span:bg-green-700"></span>
                     <span id="bar3"
-                        class="w-5 h-[3px] bg-gray-800 rounded transition-all duration-300 group-hover:bg-green-700"></span>
+                        class="w-5 h-[3px] bg-gray-800 rounded transition-all duration-300 group-hover:bg-green-700 group-active-burger-span:bg-green-700"></span>
                 </button>
 
                 <ul id="navListBurger"
                     class="nav-list invisible scale-0 origin-top-right absolute right-5 mt-2 pt-4 w-52 flex flex-col justify-around rounded-lg shadow-none border border-gray-200 bg-white transition-transform duration-300 ease-in-out z-50">
                     <li class="w-full">
                         <a href="#hero"
-                            class="nav-link block w-full px-4 py-2 hover:bg-gray-100 hover:text-green-700">Home</a>
+                            class="nav-link block w-full px-4 py-2 hover:bg-gray-100 hover:text-green-700 active:nav-burger">Home</a>
                     </li>
                     <li class="w-full">
                         <a href="#menu"
-                            class="nav-link block w-full px-4 py-2 hover:bg-gray-100 hover:text-green-700">Menu</a>
+                            class="nav-link block w-full px-4 py-2 hover:bg-gray-100 hover:text-green-700 active:nav-burger">Menu</a>
                     </li>
                     <li class="w-full">
                         <a href="#about"
-                            class="nav-link block w-full px-4 py-2 hover:bg-gray-100 hover:text-green-700">About</a>
+                            class="nav-link block w-full px-4 py-2 hover:bg-gray-100 hover:text-green-700 active:nav-burger">About</a>
                     </li>
                     <li class="w-full">
                         <a href="#location"
-                            class="nav-link block w-full px-4 py-2 hover:bg-gray-100 hover:text-green-700">Location</a>
+                            class="nav-link block w-full px-4 py-2 hover:bg-gray-100 hover:text-green-700 active:nav-burger">Location</a>
                     </li>
                     <li>
                         <a href="#menu" id="orderBtnBurger"
-                            class="order-btn block text-center bg-green-700 text-white font-medium py-1.5 px-4 m-3 rounded-md hover:bg-green-950 transition cursor-pointer"
+                            class="order-btn block text-center bg-green-700 text-white font-medium py-1.5 px-4 m-3 rounded-md hover:bg-green-950 active:bg-green-950 transition cursor-pointer"
                             role="button" aria-label="Go to order page">
                             Order Now
                         </a>
@@ -98,35 +87,35 @@
                         <a href="#hero" class="group relative inline-block text-gray-900">
                             Home
                             <span
-                                class="absolute left-0 -bottom-1 h-0.5 w-0 bg-green-700 transition-all duration-300 group-hover:w-full"></span>
+                                class="absolute left-0 -bottom-1 h-0.5 w-0 bg-green-700 transition-all duration-300 group-hover:w-full group-active-underline-span:w-full"></span>
                         </a>
                     </li>
                     <li>
                         <a href="#menu" class="group relative inline-block text-gray-900">
                             Menu
                             <span
-                                class="absolute left-0 -bottom-1 h-0.5 w-0 bg-green-700 transition-all duration-300 group-hover:w-full"></span>
+                                class="absolute left-0 -bottom-1 h-0.5 w-0 bg-green-700 transition-all duration-300 group-hover:w-full group-active-underline-span:w-full"></span>
                         </a>
                     </li>
                     <li>
                         <a href="#about" class="group relative inline-block text-gray-900">
                             About
                             <span
-                                class="absolute left-0 -bottom-1 h-0.5 w-0 bg-green-700 transition-all duration-300 group-hover:w-full"></span>
+                                class="absolute left-0 -bottom-1 h-0.5 w-0 bg-green-700 transition-all duration-300 group-hover:w-full group-active-underline-span:w-full"></span>
                         </a>
                     </li>
                     <li>
                         <a href="#location" class="group relative inline-block text-gray-900">
                             Location
                             <span
-                                class="absolute left-0 -bottom-1 h-0.5 w-0 bg-green-700 transition-all duration-300 group-hover:w-full"></span>
+                                class="absolute left-0 -bottom-1 h-0.5 w-0 bg-green-700 transition-all duration-300 group-hover:w-full group-active-underline-span:w-full"></span>
                         </a>
                     </li>
                 </ul>
             </nav>
 
             <a href="#menu"
-                class="max-sm:hidden order-btn flex justify-center items center bg-green-700 text-white font-medium py-1.5 px-4 rounded-3xl hover:bg-green-950 transition cursor pointer"
+                class="max-sm:hidden order-btn flex justify-center items center bg-green-700 text-white font-medium py-1.5 px-4 rounded-3xl hover:bg-green-950 active:bg-green-950 transition cursor pointer"
                 role="button" aria-label="Go to order page">
                 Order Now
             </a>
@@ -145,7 +134,7 @@
                     our modern, tranquil space.
                 </p>
                 <a href="#menu"
-                    class="order-btn mt-4 flex justify-center items-center bg-green-700 text-white font-medium py-3 px-7 rounded-3xl hover:bg-green-950 transition cursor pointer"
+                    class="order-btn mt-4 flex justify-center items-center bg-green-700 text-white font-medium py-3 px-7 rounded-3xl hover:bg-green-950 active:bg-green-950 transition cursor pointer"
                     role="button" aria-label="Order now from our café menu">
                     Order Now
                 </a>
@@ -167,7 +156,7 @@
             <div class="menu-grid grid justify-center items-stretch gap-8 grid-rows-4 grid-cols-1 md:grid-rows-2 md:grid-cols-2 lg:grid-rows-1 lg:grid-cols-4"
                 role="list">
                 <article
-                    class="card shadow-xl border border-gray-100 rounded-2xl max-w-xs w-full flex flex-col overflow-hidden transition-transform duration-300 transform hover:scale-105"
+                    class="card shadow-xl border border-gray-100 rounded-2xl max-w-xs w-full flex flex-col overflow-hidden transition-transform duration-300 transform hover:scale-105 active:scale-105 cursor-pointer"
                     role="listitem" aria-labelledby="drink-americano">
                     <div class="drink-image-wrapper w-full aspect-[4/3] overflow-hidden">
                         <img src="images/americano-coffee.png" alt="Americano coffee"
@@ -193,7 +182,7 @@
                 </article>
 
                 <article
-                    class="card shadow-xl border border-gray-100 rounded-2xl max-w-xs w-full flex flex-col overflow-hidden transition-transform duration-300 transform hover:scale-105"
+                    class="card shadow-xl border border-gray-100 rounded-2xl max-w-xs w-full flex flex-col overflow-hidden transition-transform duration-300 transform hover:scale-105 active:scale-105 cursor-pointer"
                     role="listitem" aria-labelledby="drink-matcha">
                     <div class="drink-image-wrapper w-full aspect-[4/3] overflow-hidden">
                         <img src="images/matcha-coffee.png" alt="Matcha green tea latte"
@@ -218,7 +207,7 @@
                 </article>
 
                 <article
-                    class="card shadow-xl border border-gray-100 rounded-2xl max-w-xs w-full flex flex-col overflow-hidden transition-transform duration-300 transform hover:scale-105"
+                    class="card shadow-xl border border-gray-100 rounded-2xl max-w-xs w-full flex flex-col overflow-hidden transition-transform duration-300 transform hover:scale-105 active:scale-105 cursor-pointer"
                     role="listitem" aria-labelledby="drink-vanilla">
                     <div class="drink-image-wrapper w-full aspect-[4/3] overflow-hidden">
                         <img src="images/iced-vanilla-coffee.png" alt="Iced Vanilla coffee"
@@ -243,7 +232,7 @@
                 </article>
 
                 <article
-                    class="card shadow-xl border border-gray-100 rounded-2xl max-w-xs w-full flex flex-col overflow-hidden transition-transform duration-300 transform hover:scale-105"
+                    class="card shadow-xl border border-gray-100 rounded-2xl max-w-xs w-full flex flex-col overflow-hidden transition-transform duration-300 transform hover:scale-105 active:scale-105 cursor-pointer"
                     role="listitem" aria-labelledby="drink-caramel">
                     <div class="drink-image-wrapper w-full aspect-[4/3] overflow-hidden">
                         <img src="images/caramel-macchiato-coffee.png" alt="Caramel Macchiato"
@@ -397,7 +386,7 @@
                     placeholder="Enter your email" />
 
                 <button type="submit"
-                    class="px-6 py-2 ring-white ring-2 bg-white text-green-800 font-semibold rounded-full transition duration-300 hover:bg-gray-200 hover:ring-gray-200 cursor-pointer max-sm:w-full">
+                    class="px-6 py-2 ring-white ring-2 bg-white text-green-800 font-semibold rounded-full transition duration-300 hover:bg-gray-200 hover:ring-gray-200 active-btn-bg-ring-gray-200 cursor-pointer max-sm:w-full">
                     Subscribe
                 </button>
             </form>
@@ -420,25 +409,25 @@
                     <ul class="footer-icons flex justify-center items-center gap-5">
                         <li>
                             <a href="#" target="_blank" aria-label="Visit our Facebook page"
-                                class="w-10 h-10 flex items-center justify-center bg-gray-700 text-white rounded-full hover:bg-green-700 transition">
+                                class="w-10 h-10 flex items-center justify-center bg-gray-700 text-white rounded-full hover:bg-green-700 active-social-link-bg-green-700  transition">
                                 <i class="bi bi-meta" aria-hidden="true"></i>
                             </a>
                         </li>
                         <li>
                             <a href="#" target="_blank" aria-label="Visit our Twitter page"
-                                class="w-10 h-10 flex items-center justify-center bg-gray-700 text-white rounded-full hover:bg-green-700 transition">
+                                class="w-10 h-10 flex items-center justify-center bg-gray-700 text-white rounded-full hover:bg-green-700 active-social-link-bg-green-700  transition">
                                 <i class="bi bi-twitter-x" aria-hidden="true"></i>
                             </a>
                         </li>
                         <li>
                             <a href="#" target="_blank" aria-label="Visit our Instagram page"
-                                class="w-10 h-10 flex items-center justify-center bg-gray-700 text-white rounded-full hover:bg-green-700 transition">
+                                class="w-10 h-10 flex items-center justify-center bg-gray-700 text-white rounded-full hover:bg-green-700 active-social-link-bg-green-700  transition">
                                 <i class="bi bi-instagram" aria-hidden="true"></i>
                             </a>
                         </li>
                         <li>
                             <a href="#" target="_blank" aria-label="Visit our Tiktok channel"
-                                class="w-10 h-10 flex items-center justify-center bg-gray-700 text-white rounded-full hover:bg-green-700 transition">
+                                class="w-10 h-10 flex items-center justify-center bg-gray-700 text-white rounded-full hover:bg-green-700 active-social-link-bg-green-700  transition">
                                 <i class="bi bi-tiktok" aria-hidden="true"></i>
                             </a>
                         </li>
@@ -453,13 +442,13 @@
                     <a href="https://www.facebook.com/stephenwilliam.dejesus.5/" target="_blank"
                         class="footer-author-link text-green-700"
                         aria-label="Visit Stephen William G. De Jesus' Facebook profile">
-                        Stephen William G. De Jesus
+                        <u>Stephen William G. De Jesus</u>
                     </a>
                 </p>
                 <ul class="flex justify-center items-center flex-wrap gap-5">
-                    <li><a href="#" class="hover:text-green-700">Privacy Policy</a></li>
-                    <li><a href="#" class="hover:text-green-700">Terms of Privacy</a></li>
-                    <li><a href="#" class="hover:text-green-700">Careers</a></li>
+                    <li><a href="#" class="hover:text-green-700 active:text-green-700">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-green-700 active:text-green-700">Terms of Privacy</a></li>
+                    <li><a href="#" class="hover:text-green-700 active:text-green-700">Careers</a></li>
                 </ul>
             </div>
         </div>
